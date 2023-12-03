@@ -1,0 +1,481 @@
+@font-face {
+    src: url(../fonts/helvetica-neue-regular.ttf);
+    font-family: 'helvetica-r';
+}
+@font-face {
+    src: url(../fonts/helvetica-neue-bold.ttf);
+    font-family: 'helvetica';
+}
+@font-face {
+    src: url(../fonts/helveticaneue.ttf);
+    font-family: 'helveticaneue-r';
+}
+
+@font-face {
+    src: url(../fonts/HelveticaNeue-Medium.otf);
+    font-family: 'HelveticaNeue';
+}
+@font-face {
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-family: 'Raleway-S';
+}
+
+
+@font-face {
+    src: url(../fonts/Helvetica-regular.ttf);
+    font-family: 'Helvetica-r';
+}
+@font-face {
+    src: url(../fonts/Helvetica-Bold.ttf);
+    font-family: 'Helvetica-b';
+}
+
+
+@font-face {
+    src: url(../fonts/Raleway-Heavy.ttf);
+    font-family: 'Raleway-Heavy';
+}
+@font-face {
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-family: 'Raleway-M';
+}
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: 'Raleway-R';
+}
+@font-face {
+    src: url(../fonts/Raleway-Bold.ttf);
+    font-family: 'Raleway-B';
+}
+@font-face {
+    src: url(../fonts/Momcake-Bold.otf);
+    font-family: 'Momcake-B';
+}
+
+
+/*form Section CSS*/
+
+#form .form-main img {
+    position: relative;
+}
+#form .form-main .form-items {
+	position: absolute;
+	top: 23%;
+	left: 0;
+	z-index: 9;
+	color: #fff;
+	width: 100%;
+}
+#form .form-item {
+	border-radius: 15px;
+    padding: 35px 50px;
+    background: rgba(160, 160, 160, 0.33);
+    margin-right: 20px;
+}
+#form .form-item .form-title {
+    font-family: 'Raleway-B';
+    font-size: 43px;
+    padding-bottom: 50px;
+}
+#form .form .form-control {
+    font-family: 'Helvetica-b';
+    font-size: 11px;
+    color: #000;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+#form .form .form-label {
+    font-family: 'Helvetica-r';
+    font-size: 11px;
+    line-height: 20px
+}
+#form .form .form-label i {
+    font-size: 12px;
+    padding-right: 10px;
+    color: #fff;
+}
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: rgba(134, 183, 254, 0);
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0);
+}
+#form .form .btn {
+    font-family: 'helvetica-r';
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/*Check mark country CSS*/
+
+#form .country-check {
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#form .country-check input{
+    display: none;
+} 
+#form .country-check label {
+	display: inline-block;
+	width: 49.9%;
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	margin-right: 20px;
+}
+#form .country-check label p {
+	font-family: 'helvetica';
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+	height: 87px;
+	padding: 10px;
+    padding-top: 20px;
+	border-bottom: 4px solid #CACACA;
+	border-radius: 15px;
+}
+#form .country-check label p img {
+    padding-left: 5px;
+    padding-top: 2px;
+    width: 30px;
+    height: 16px;
+}
+#form .country-check label p i {
+	color: #CACACA;
+	position: absolute;
+	right: 16px;
+	top: 23px;
+	font-size: 9px;
+}
+#form .country-check label input:checked ~ p {
+	font-size: 16px;
+	height: 87px;
+    border-bottom: 4px solid #0067F4;
+}
+#form .country-check label input:checked ~ p img {
+    width: 30px;
+    height: 16px;
+}
+#form .country-check label input:checked ~ p i {
+    color: #0067F4;
+}
+#form .country-check label.ml_v {
+    margin-right: 0;
+}
+
+
+
+
+
+
+/*Modal css*/
+
+#form .find-it .find-no-btn{
+    font-family: 'helvetica-r';
+    color: #fff;
+    font-size: 16px;
+    padding: 0px;
+    border: 0;
+    background: none;
+}
+.modal-for-location .find-zip {
+    font-family: 'Helvetica-r';
+    padding: 10px 55px;
+    font-size: 20px;
+}
+.modal-for-location .modal-title {
+    font-family: 'HelveticaNeue';
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.modal-for-location .form-label {
+    font-family: 'helvetica-r';
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.modal-for-location .form-control {
+    font-family: 'helvetica-r';
+    font-size: 16px;
+    padding: 12px 25px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 4px 2px rgba(208, 208, 208, 0.3);
+}
+
+.modal-for-location .modal-dialog {
+	max-width: 740px;
+}
+.modal-for-location .modal-content {
+	border-radius: 25px;
+}
+.modal-for-location .form-select {
+    background-image: url(../images/form/select-arrow.png);
+    background-size: 43px;
+}
+
+
+
+
+#form .form  #form-item-design2 .form-control {
+	font-family: 'Helvetica-r';
+	font-size: 16px;
+	color: #000;
+	padding: 12px 15px;
+	border-radius: 10px;
+}
+
+
+
+
+/*Calendar CSS*/
+#dycalendar{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 40px;
+}
+#dycalendar .dycalendar-month-container {
+	padding: 0px;
+	text-align: center;
+	font-family: 'helvetica';
+    font-size: 15px;
+	color: #000;
+}
+#dycalendar table{
+    width: 100%;
+}
+#dycalendar table tr td{
+    color: #000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all linear .2s;
+    margin: 2px;
+}
+#dycalendar table tr:nth-child(1) td {
+	color: #BFBFBF;
+	width: 65px;
+	padding: 5px;
+}
+
+#dycalendar table tr:nth-child(1){
+    color: #BFBFBF;
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+}
+#dycalendar .dycalendar-month-container .dycalendar-today-date, .dycalendar-month-container .dycalendar-target-date {
+	background-color: #006CFF;
+    color: #fff !important;
+    font-weight: 700 !important;
+	border-radius: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 2px rgba(0, 108, 255, 0.51);
+}
+#dycalendar .dycalendar-month-container .dycalendar-header {
+	width: 50%;
+}
+#dycalendar .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn {
+	font-size: 15px;
+    color: #006CFF;
+}
+#dycalendar .dycalendar-month-container .dycalendar-span-month-year {
+    font-family: 'helvetica';
+    color: #006CFF;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+/*form-item-design4 CSS*/
+
+#form .country-check.form-item-design4 label p span {
+    font-family: 'HelveticaNeue';
+	font-size: 11px;
+	color: #B2B2B2;
+    display: block;
+    padding-top: 15px;
+}
+#form .sami-title {
+	font-family: 'Raleway-B';
+	margin-bottom: 30px;
+	font-size: 28px;
+}
+
+
+
+#form .count-bedrooms {
+	margin-bottom: 15px;
+	width: 100%;
+	overflow: hidden;
+}
+#form .count-bedrooms input{
+    display: none;
+} 
+#form .count-bedrooms label {
+	display: inline-block;
+	width: 60px;
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+}
+#form .count-bedrooms label p {
+	font-family: 'helvetica';
+	color: #CACACA;
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border: 5px solid #CACACA;
+	border-radius: 50%;
+	line-height: 41px;
+	text-align: center;
+	font-size: 20px;
+}
+#form .count-bedrooms label p span {
+    position: relative;
+    top: -2px;
+}
+#form .count-bedrooms label input:checked ~ p {
+    border: 5px solid #0067F4;
+    color: #0067F4;
+}
+
+
+
+
+
+
+#form .move-paying {
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+#form .move-paying input{
+    display: none;
+} 
+#form .move-paying label {
+	display: flex;
+	position: relative;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+    margin-right: 30px;
+}
+#form .move-paying label p {
+	background: rgba(255, 255, 255, 0);
+	width: 30px;
+	height: 30px;
+	border: 3px solid #CACACA;
+	border-radius: 50%;
+	line-height: 25px;
+	text-align: center;
+}
+#form .move-paying label p i {
+	font-size: 14px;
+    color: rgba(202, 202, 202, 0);
+}
+#form .move-paying label span {
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+    padding: 5px 20px 5px 15px;
+}
+#form .move-paying label input:checked ~ p {
+    border: 3px solid #0067F4;
+}
+#form .move-paying label input:checked ~ p i {
+    color: #0067F4;
+}
+
+
+
+
+
+
+#form .company-n label {
+    font-family: 'Helvetica-r';
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+#form .company-n .form-control {
+    font-family: 'helvetica-r';
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#form-item-design5 .phone-number {
+    padding-left: 30px;
+    position: relative;
+   
+}
+#form-item-design5 .c-number {
+	position: relative;
+	top: -44px;
+	left: 4px;
+    z-index: 99;
+}
+.dropdown-toggle {
+	position: absolute;
+}
+#form-item-design5 .c-number .btn {
+    padding: 5px;
+    padding-right: 20px;
+    width: 50px;
+}
+.dropdown-toggle::after {
+	display: inline-block;
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	content: "";
+	border-top: 0.3em solid;
+	border-right: 0.3em solid transparent;
+	border-bottom: 0;
+	border-left: 0.3em solid transparent;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+#form-item-design5 .c-number .btn img {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer Section CSS*/
+#footer {
+	margin-top: -319px;
+}

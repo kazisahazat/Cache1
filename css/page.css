@@ -1,0 +1,526 @@
+@font-face {
+    src: url(../fonts/helvetica-neue-bold.ttf);
+    font-family: 'helvetica';
+}
+@font-face {
+    src: url(../fonts/helveticaneue.ttf);
+    font-family: 'helveticaneue-r';
+}
+
+@font-face {
+    src: url(../fonts/HelveticaNeue-Medium.otf);
+    font-family: 'HelveticaNeue';
+}
+@font-face {
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-family: 'Raleway-S';
+}
+@font-face {
+    src: url(../fonts/._Helvetica.ttf);
+    font-family: 'Helvetica-r';
+}
+
+
+@font-face {
+    src: url(../fonts/Raleway-Heavy.ttf);
+    font-family: 'Raleway-Heavy';
+}
+@font-face {
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-family: 'Raleway-M';
+}
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: 'Raleway-R';
+}
+@font-face {
+    src: url(../fonts/Momcake-Bold.otf);
+    font-family: 'Momcake-B';
+}
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'helveticaneue-r';
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: normal;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.btn-link:hover, .btn-link:focus {
+	text-decoration: none;
+}
+ul, ol {
+	list-style-type: none;
+    padding-left: 0;
+}
+P{
+    font-size: 14px
+}
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;    
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+/*Navbar Section CSS*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0);
+    z-index: 99
+}
+.navbar-light  .navbar-nav .nav-link {
+    font-family: 'helveticaneue-r';
+	padding-right: 0;
+	padding-left: 0;
+	margin: 0 20px;
+	color: #fff;
+    font-weight: 400;
+    transition: all linear .3s;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+}
+.navbar-light  .navbar-nav .nav-link.btn-one {
+    padding: 8px 30px;
+    background: #006cff;
+    border-radius: 25px
+}
+.navbar-light .navbar-nav .nav-link::after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: all linear .3s;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+	color: #fff;
+}
+    
+    
+.navbar-light .navbar-nav .nav-link.active::after {
+    width: 100%;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+.navbar-light .navbar-nav .nav-link.btn-one:hover::after{
+	color: #fff;
+    width: 0%;
+    opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link:focus {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.navbar-light .navbar-toggler-icon {
+	background-image: url(../images/nav-ibar.svg);
+}
+.navbar-light .navbar-toggler {
+	color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
+/*Banner Section CSS*/
+
+/*
+#banner {
+    position: relative;
+}
+*/
+#banner .banner-main img {
+    position: relative;
+}
+#banner .banner-main .banner-items {
+	position: absolute;
+	top: 23%;
+	left: 11%;
+	z-index: 9;
+	color: #fff;
+}
+#banner .banner-main .banner-items p {
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+}
+#banner .banner-main .banner-items h1 {
+    font-family: 'HelveticaNeue';
+    padding-bottom: 30px;
+    font-size: 65px;
+}
+#banner .banner-main .banner-items a {
+    font-family: 'HelveticaNeue';
+    font-size: 18px;
+	color: #fff;
+}
+#banner .banner-main .banner-items a i {
+    position: relative;
+    top: 5px;
+    width:75px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+	background: #006cff;
+    color: #fff;
+	border-radius: 50%;
+    margin-right: 10px;
+    font-size: 32px;
+}
+
+
+
+
+
+/*steps Section CSS*/
+
+#steps {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    position: relative;
+}
+#steps .Mask-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -9;
+    max-width: 50px;
+}
+#steps .Mask-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -9;
+    max-width: 50px;
+}
+#steps .steps-title h2 {
+    font-family: 'Raleway-S';
+    font-size: 60px;
+    padding-bottom: 40px;
+}
+#steps .steps-title h3 {
+    font-family: 'Raleway-S';
+    font-size: 46px;
+    padding-bottom: 80px;
+}
+
+#steps .step-item .step-count h4 {
+    font-family: 'Raleway-S';
+	width: 75px;
+	height: 75px;
+	line-height: 65px;
+	background: #006cff;
+	color: #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	font-size: 52px;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+#steps .step-item .step-count h6 {
+	font-family: 'Raleway-S';
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+#steps .step-item .step-item-text {
+    padding: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 5px 5px rgba(221, 221, 221, 0.65);
+    margin-top: 30px;
+    border-radius: 5px;
+}
+#steps .step-item .step-item-text p {
+	font-family: 'Raleway-S';
+	font-size: 18px;
+	line-height: 30px;
+}
+#steps .step-item .step-item-text a {
+	font-family: 'Raleway-S';
+	font-size: 14px;
+}
+#steps .step-item {
+    position: relative;
+    margin-bottom: 70px;
+}
+#steps .arrow-sign i {
+	position: absolute;
+	left: -25%;
+	z-index: 99;
+	transform: translateX(25%);
+	font-size: 30px;
+	top: 36px;
+}
+
+
+
+
+
+
+
+/*Service Section CSS*/
+
+#service-section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#service-section .container {
+    position: relative;
+}
+#service-section .container .dots1 {
+	position: absolute;
+	top: -44px;
+	left: -22px;
+	z-index: -9;
+	max-width: 100px;
+}
+#service-section .container .dots2 {
+    position: absolute;
+    bottom: -44px;
+    right: -22px;
+    z-index: -9;
+    max-width: 100px;
+}
+#service-section .service-section-item {
+    border-radius: 25px;
+    box-shadow: 0 0 12px 8px rgba(221, 221, 221, 0.45);
+    padding: 30px;
+    padding-bottom: 40px;
+    background: #fff;
+}
+#service-section .service-section-item .service-icon {
+    width: 100px;
+    height: 100px;
+    background: #b4b9c1;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 100px;
+    transition: all linear .3s;
+}
+#service-section .service-icon img {
+    width: 35px;
+}
+#service-section .service-section-item h4 {
+    font-family: 'Momcake-B';
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#service-section .service-section-item p {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	padding-bottom: 20px;
+	font-size: 12px;
+	line-height: 21px;
+}
+#service-section .service-section-item a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	padding-bottom: 20px;
+	line-height: 40px;
+    color: #000;
+}
+#service-section .service-section-item a i {
+    position: relative;
+    top: 5px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #b4b9c1;
+	color: #fff;
+	border-radius: 50%;
+	margin-left: 10px;
+	font-size: 25px;
+    transition: all linear .3s;
+}
+#service-section .service-section-item:hover .service-icon {
+	background: #000;
+}
+#service-section .service-section-item:hover a i {
+	background: #000;
+}
+
+
+
+
+
+
+/*Call Section CSS*/
+
+#call-section {
+    background: #fafafa;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    margin-bottom: 50px;
+}
+#call-section .call-item h2 {
+	font-family: 'Raleway-S';
+	font-size: 50px;
+    padding-bottom: 80px;
+}
+#call-section .call-item h2 a {
+    padding-left: 20px;
+}
+.btn-1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	padding: 20px 60px;
+	background: #006cff;
+	border-radius: 45px;
+    color: #fff;
+}
+.btn-1:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*footer Section CSS*/
+#footer {
+    padding-top: 100px;
+}
+#footer .footer-main  {
+    position: relative;
+}
+#footer .footer-main .footer-fild {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	padding-top: 250px;
+	width: 100%;
+}
+#footer .footer-item h5, #footer .accordion-button {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+#footer .footer-item p {
+    padding-bottom: 5px;
+}
+#footer .footer-item p a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: start;
+}
+#footer .accordion-button i{
+    padding-left: 12px;
+    font-size: 12px;
+}
+#footer .accordion-body p a {
+    text-align: start;
+}
+#footer .social-links {
+    padding-top: 110px;
+    text-align: end;
+}
+#footer .social-links ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+#footer .social-links ul li {
+	display: inline-block;
+	padding-left: 37px;
+}
+#footer .and-copy {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*modal Section CSS*/
+.modal-header .btn-close {
+	padding: 0;
+}
+.modal-header {
+/*	justify-content: space-between;*/
+	padding: 1rem 1rem;
+	border-bottom: 0;
+    padding-bottom: 0
+}
+.modal-content {
+	border-radius: 15px;
+	outline: 0;
+    padding: 35px;
+}
+.modal-content p {
+    font-family: 'HelveticaNeue';
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+.modal-title {
+    font-family: 'HelveticaNeue';
+    font-size: 50px;
+    color: #006CFF;
+}
+.btn-close {
+	box-sizing: content-box;
+	width: 1em;
+	height: 1em;
+	padding: 0.25em 0.25em;
+	color: #000;
+	background: url(../images/metro-cross.png) center/1em auto no-repeat;
+}
+.modal-dialog {
+	max-width: 925px;
+}
